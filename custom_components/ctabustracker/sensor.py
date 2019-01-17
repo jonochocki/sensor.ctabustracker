@@ -106,8 +106,9 @@ class CtaBusData:
         """Initialize the data object."""
         self.api_key = api_key
         self.config = config
-        self.api = RESOURCE + ENDPOINT.format(
-            self.api_key, self.config['route'], self.config['stop_id'])
+        self.api = "{}{}".format(
+            RESOURCE, ENDPOINT.format(
+                self.api_key, self.config['route'], self.config['stop_id']))
         self._data = None
 
     @Throttle(TIME_BETWEEN_UPDATES)
