@@ -16,6 +16,8 @@ from homeassistant.const import CONF_NAME
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 
+__version__ = '0.0.1'
+
 _LOGGER = logging.getLogger(__name__)
 
 CONF_API_KEY = 'api_key'
