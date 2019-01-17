@@ -108,7 +108,6 @@ class CtaBusData:
         self.config = config
         self.api = RESOURCE + ENDPOINT.format(
             self.api_key, self.config['route'], self.config['stop_id'])
-        _LOGGER.error(self.api)
         self._data = None
 
     @Throttle(TIME_BETWEEN_UPDATES)
