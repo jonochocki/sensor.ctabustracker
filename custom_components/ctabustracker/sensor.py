@@ -16,7 +16,7 @@ from homeassistant.const import CONF_NAME
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -80,9 +80,8 @@ class CtaBusSensor(Entity):
                 self._state = data[self.departure]['prdctdn']
             else:
                 self._state = self._state
-        except Exception as error:  # pylint: disable=W0703
-            _LOGGER.error(error)
-            self._state = self._state
+        except Exception:  # pylint: disable=W0703
+            self._state = None
         _LOGGER.debug(self._state)
 
     @property
