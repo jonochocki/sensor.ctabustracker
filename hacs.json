@@ -2,4 +2,5 @@
   "name": "CTA Bus Tracker",
   "render_readme": true,
   "persistent_directory": "cache"
+  "domains": ["sensor"],
 }
