@@ -2,7 +2,7 @@
 Show departure information from ctabustracker (Chicago Transit Authority).
 
 For more details about this component, please refer to the documentation at
-https://github.com/custom-components/sensor.ctabustracker/
+https://github.com/jonochocki/sensor.ctabustracker/
 """
 from datetime import timedelta
 import logging
